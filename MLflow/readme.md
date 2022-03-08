@@ -7,3 +7,7 @@ ML 모델의 실험을 tracking하고 model을 공유 및 관리할 수 있도�
 Install MLFlow
 
 ``` pip install mlflow ```
+
+MLFlow UI 보기
+
+``` mlflow ui --host 0.0.0.0 -p 5001 # 외부 접속 Port는 5001로 열기 ``` 
