@@ -11,3 +11,4 @@ Install MLFlow
 MLFlow UI 보기
 
 ``` mlflow ui --host 0.0.0.0 -p 5001 # 외부 접속 Port는 5001로 열기 ``` 
+``` docker에서 접근 허용된 PORT를 입력할 것 ```
