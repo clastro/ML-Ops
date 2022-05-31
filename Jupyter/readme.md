@@ -10,3 +10,8 @@ jupyter notebook list
 ```
 jupyter nbconvert --to script maxmum_file.ipynb
 ```
+
+### jupyter notebook 메모리 사용량 보기
+```
+jupyter notebook --ResourceUseDisplay.mem_limit
+```
