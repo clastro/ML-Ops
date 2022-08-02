@@ -15,7 +15,7 @@ for file in tqdm(files):
     tree = parse(file) #XML 파일을 tree 형태로 파싱
     root = tree.getroot() #연결된 노드의 뿌리를 모두 불러옴
     
-    ecg = np.zeros([12,5000]) #ecg Size 초기화
+    ecg = np.zeros([5000,12]) #ecg Size 초기화
     
     if(root.tag == 'INFINITT_CIS'): #INFINITT_CIS인 경우
         
@@ -25,7 +25,7 @@ for file in tqdm(files):
         
         for i in range(len(Data)):
             
-            ecg[i,:] = np.array(Data[i].split(','),dtype='float32')
+            ecg[:,i] = np.array(Data[i].split(','),dtype='float32')
         
     elif(root.tag == 'BTypeECG'): #IBTypeECG인 경우
         
@@ -36,7 +36,7 @@ for file in tqdm(files):
         for i in range(len(Waveform)):
             
             Data = [x.findtext("Data") for x in Waveform[i]]
-            ecg[i,:] = np.array(Data[0].split(' '),dtype='float32')
+            ecg[:,i] = np.array(Data[0].split(' '),dtype='float32')
             
     else:
         print('error')
