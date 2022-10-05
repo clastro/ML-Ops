@@ -81,7 +81,7 @@ docker run -d --gpus all #GPU 사용
            jupyter notebook --allow-root #루트 권한으로 jupyter notebook 실행 
            --ip 0.0.0.0 #모든 ip 허용
            --NotebookApp.token='' #서버에 등록하는 인증절차 생략 
-           --no-browser /bin/bash 
+           --no-browser /bin/bash # bin/bash로 접속
 docker run -d --gpus all # gpu 사용 
       -p 8889:8888  # host port : jupyter의 default port 
       -p 6006:6006  # tensorboard의 default port 
@@ -93,6 +93,6 @@ docker run -d --gpus all # gpu 사용
       --NotebookApp.token=''  # 서버에 등록하는 인증절차를 생략 
       --no-browser # 주피터 접속 기억 실행하지 않도록
       
-docker run -d --gpus all -it -v /:/smc_work -p 20300:8888 -p 8400:8400 --name jupyter_notebook_shea tensorflow/tensorflow:latest-gpu-jupyter jupyter notebook --allow-root --ip 0.0.0.0 --NotebookApp.token='' --no-browser /bin/bash 
+docker run -d --gpus all -it -v /:/folder -p 입력Port:8888 -p 입력Port:할당Port --name jupyter_notebook_shea tensorflow/tensorflow:latest-gpu-jupyter jupyter notebook --allow-root --ip 0.0.0.0 --NotebookApp.token='' --no-browser /folder 
            
 ```
