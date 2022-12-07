@@ -41,6 +41,13 @@ docker의 컨테이너 리스트 조회하기 : -a는 종료된 컨테이너를 
 docker ps -a 
 ```
 
+정지된 Container 삭제하기
+
+```
+docker container prune
+docker container prune --filter "until=12h" # 12시간 내 사용하지 않은 container 
+```
+
 docker 시작하기
 
 ```
