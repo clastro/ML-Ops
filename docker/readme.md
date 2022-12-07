@@ -3,6 +3,12 @@ docker를 공부하고 정리하는 공간
 
 ## 접근 명령어
 
+docker가 설치된 폴더 확인
+
+```
+docker info | grep "Docker Root Dir"
+```
+
 docker 패키지 설치
 
 ```
