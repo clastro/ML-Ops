@@ -8,7 +8,7 @@ docker attach my_torch #만약 안 되었다면
 
 3. jupyter notebook 등 설치
 
-pip isntall jupyter notebook
+pip install jupyter notebook
 
 4. jupyter notebook 실행
 jupyter notebook --allow-root
