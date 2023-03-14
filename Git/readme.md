@@ -50,6 +50,12 @@ git status
 git commit -m "깃헙에 커밋하는 메세지"
 ```
 
+### git 수정 내역 모두 삭제
+
+```
+git checkout -- 수정파일이름
+```
+
 ### git push
 
 ```
