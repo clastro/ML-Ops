@@ -25,9 +25,19 @@ git clone https://github.com/folder/project.git #이러면 하드에 해당 Gith
 cp /some/path/analysis1.ipynb /path/of/projectA/
 ```
 
-### git 추가하기
+### git 추가하기 (stage 영역으로 보내기)
 ```
 git add analysis1.ipynb
+```
+
+### git 파일 이름 변경
+```
+git mv name rename
+```
+
+### git 파일 등록 취소 (unstage)
+```
+git rm --cached analysis1.ipynb
 ```
 
 ### git 상태보기
