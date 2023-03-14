@@ -49,6 +49,7 @@ git status
 ```
 git commit -m "깃헙에 커밋하는 메세지"
 git commit --allow-empty-message -m "" #커밋 메세지를 작성하고 싶지 않을 때 옵션
+git commit -v #diff 내용이 추가
 ```
 
 ### git 수정 내역 모두 삭제
@@ -67,4 +68,19 @@ git push #동기화 완료 직전에 권한 어떻게 줄 거냐고 물어봄
 
 ```
 git tag; git branch # ; : 여러개 명령어 묶어서 사용
+```
+
+### git log 및 log 옵션
+
+```
+git log
+git log --pretty=short #로그 확인
+git log filename
+git show 'commitID' # 특정 커밋의 상세 정보
+```
+
+### git diff
+```
+git diff # stage와 working directory 비교
+git diff head # 최신 커밋과 변경 내용 비교
 ```
