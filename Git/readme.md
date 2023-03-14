@@ -48,6 +48,7 @@ git status
 ### git commit
 ```
 git commit -m "깃헙에 커밋하는 메세지"
+git commit --allow-empty-message -m "" #커밋 메세지를 작성하고 싶지 않을 때 옵션
 ```
 
 ### git 수정 내역 모두 삭제
