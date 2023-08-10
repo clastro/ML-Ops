@@ -41,6 +41,12 @@ docker의 컨테이너 리스트 조회하기 : -a는 종료된 컨테이너를 
 docker ps -a 
 ```
 
+docker의 container를 그대로 복사해 image로 보관 (commit)
+
+```
+docker commit container1 image_name
+```
+
 정지된 Container 삭제하기
 
 ```
