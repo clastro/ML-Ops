@@ -3,6 +3,12 @@ docker를 공부하고 정리하는 공간
 
 ## 접근 명령어
 
+docker file을 사용해서 이미지 만들기
+
+```
+docker build -t dockerImage .
+```
+
 docker가 설치된 폴더 확인
 
 ```
